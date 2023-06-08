@@ -6,8 +6,18 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
   </head>
+  <script>
+    function changeBackground(color){
+      let html = document.getElementsByTagName("html")[0];
+      html.style.background = color;
+    }
+  </script>
   <body>
     <h1>Mozilla is cool</h1>
+    <button onclick="changeBackground('Red')">Red</button>
+    <button onclick="changeBackground('White')">White</button>
+    <button onclick="changeBackground('Blue')">Blue</button>
+    
     <img src="images/firefox-icon.png" alt="The Firefox logo: a flaming fox surrounding the Earth.">
 
     <p>At Mozilla, we’re a global community of</p>
